@@ -191,13 +191,12 @@ ssh-keygen -t rsa -b 4096 -C "sshuser@lab" -f ~/.ssh/id_lab
 
 #### **Шаг 6: Копирование ключа на srv и isp**
 
-На основном компьютере:
-
+С машины **CLI** запустить команду копирования ключа на Server:
 ```bash
 ssh-copy-id -i ~/.ssh/id_lab.pub sshuser@ip_srv
 ```
 
-На isp (после входа):
+Так же скопировать ключ на isp:
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_lab.pub sshuser@192.168.1.1
