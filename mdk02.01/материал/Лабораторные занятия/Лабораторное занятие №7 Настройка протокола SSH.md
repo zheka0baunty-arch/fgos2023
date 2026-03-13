@@ -199,7 +199,7 @@ ssh-copy-id -i ~/.ssh/id_lab.pub sshuser@ip_srv
 Так же скопировать ключ на isp:
 
 ```bash
-ssh-copy-id -i ~/.ssh/id_lab.pub sshuser@192.168.1.1
+ssh-copy-id -i ~/.ssh/id_lab.pub sshuser@ip_isp
 ```
 
 ---
